@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.infoworks</groupId>
-    <artifactId>demo-maven</artifactId>
-    <version>1.5</version>
+	<groupId>io.infoworks</groupId>
+	<artifactId>demo-maven</artifactId>
+	<version>1.5</version>
+	<dependencies>
+		<dependency>
+			<groupId>com.teradata.connector</groupId>
+			<artifactId>tdch</artifactId>
+			<version>1.4.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.teradata.tdgssconfig</groupId>
+			<artifactId>tdgssconfig</artifactId>
+			<version>1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.teradata.jdbc</groupId>
+			<artifactId>terajdbc4 </artifactId>
+			<version>4</version>
+		</dependency>
+		<dependency>
 
+			<groupId>com.oracle</groupId>
+			
+			<artifactId>ojdbc6</artifactId>
+			
+			<version>6</version>
+
+		</dependency>
+	</dependencies>
+	<repositories>
+		<repository>
+			<id>extRepo</id>
+			<url>http://52.70.211.94:7080/artifactory/ext-dependency/</url>
+		</repository>
+	</repositories>
 </project>
